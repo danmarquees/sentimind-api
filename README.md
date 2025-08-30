@@ -1,3 +1,19 @@
+##Documentação do Projeto - Sentimind API
+
+Este projeto, uma API de análise de sentimento, tem uma vasta gama de aplicações práticas no mundo real, especialmente em áreas que lidam com grandes volumes de dados de texto gerados por pessoas. Aqui estão os principais casos de uso:
+
+Monitoramento de Marcas e Redes Sociais: Empresas podem usar a API para analisar automaticamente milhares de tweets, comentários no Instagram ou posts no Facebook para entender a percepção do público sobre seus produtos e campanhas em tempo real. É positivo? Negativo? Neutro?
+
+Análise de Feedback de Clientes: É possível processar automaticamente reviews de produtos em e-commerces, avaliações em apps ou respostas de pesquisas de satisfação para identificar rapidamente pontos fortes e problemas que precisam de atenção.
+
+Inteligência de Mercado: A API pode ser usada para analisar notícias, blogs e fóruns para entender o sentimento do mercado em relação a um setor específico, a concorrentes ou a tendências emergentes.
+
+Atendimento ao Cliente (SAC): Pode-se usar a análise de sentimento para triar e priorizar tickets de suporte. Por exemplo, um email de um cliente com sentimento "muito negativo" pode ser encaminhado com urgência para uma equipe especializada.
+
+Análise Política e Social: Campanhas políticas e institutos de pesquisa podem medir a opinião pública sobre candidatos, políticas ou eventos importantes analisando o sentimento em postagens de redes sociais.
+
+Mercado Financeiro: Analistas podem usar a API para "ler" o sentimento do mercado financeiro em notícias e postagens sobre determinadas ações ou criptomoedas, ajudando a prever tendências (embora isso seja uma área bem complexa).
+
 Sentimind API 🧠
 Um microsserviço de alta performance para análise de sentimento e sumarização de texto, construído com FastAPI e modelos de linguagem da Hugging Face. O projeto é focado na implementação de um ciclo de vida completo de MLOps, demonstrando práticas modernas de desenvolvimento, automação e deploy em nuvem.
 
