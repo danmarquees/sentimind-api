@@ -3,6 +3,7 @@
 from transformers import pipeline
 from functools import lru_cache
 
+
 # Usamos um class para organizar a lógica relacionada ao modelo
 class SentimentModel:
     def __init__(self):
@@ -32,22 +33,24 @@ class SentimentModel:
 
         # Mapeamento de estrelas para rótulos de sentimento
         label_map = {
-            '1 star': 'muito negativo',
-            '2 stars': 'negativo',
-            '3 stars': 'neutro',
-            '4 stars': 'positivo',
-            '5 stars': 'muito positivo'
+            "1 star": "muito negativo",
+            "2 stars": "negativo",
+            "3 stars": "neutro",
+            "4 stars": "positivo",
+            "5 stars": "muito positivo",
         }
 
         # Retorna o resultado no formato que nossa API espera
         return {
-            "label": label_map.get(result['label'], 'desconhecido'),
-            "score": result['score']
+            "label": label_map.get(result["label"], "desconhecido"),
+            "score": result["score"],
         }
+
 
 # Instanciamos o modelo aqui para que ele seja um "singleton"
 # e seja carregado na inicialização do módulo.
 sentiment_model = SentimentModel()
+
 
 # Função auxiliar para ser usada na API, garantindo que o modelo seja injetado.
 def get_sentiment_model():

@@ -1,0 +1,25 @@
+# Configuração central para ferramentas de desenvolvimento Python
+
+[tool.black]
+# Define o comprimento máximo da linha, padrão do black
+line-length = 88
+# Especifica a versão mínima do Python para garantir compatibilidade na formatação
+target-version = ['py39']
+
+[tool.flake8]
+# Ignora erros específicos:
+# E501: linha muito longa (o black já trata disto)
+# W503: quebra de linha antes de operador binário (conflita com o estilo do black)
+ignore = ['E501', 'W503']
+
+# Define o comprimento máximo da linha, para ser consistente com o black
+max-line-length = 88
+
+# Pastas e ficheiros a serem ignorados pelo flake8
+exclude = [
+    '.git',
+    '__pycache__',
+    'venv',
+    'build',
+    'dist',
+]

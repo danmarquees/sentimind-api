@@ -9,6 +9,7 @@ app = FastAPI(
     version="0.1.0",
 )
 
+
 # Endpoint de "health check" para verificar se a API está no ar
 @app.get("/", tags=["Status"])
 def read_root():
@@ -18,8 +19,7 @@ def read_root():
 # Endpoint principal para análise de sentimento
 @app.post("/analyze", response_model=SentimentResponse, tags=["Análise"])
 def analyze_sentiment(
-    request: AnalysisRequest,
-    model: SentimentModel = Depends(get_sentiment_model)
+    request: AnalysisRequest, model: SentimentModel = Depends(get_sentiment_model)
 ):
     """
     Recebe um texto e retorna a análise de sentimento.
