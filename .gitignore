@@ -1,0 +1,54 @@
+Arquivos e pastas de ambiente virtual
+venv/
+.venv/
+env/
+.env
+ENV/
+
+Arquivos de cache e compilados do Python
+pycache/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+Arquivos de distribuição e empacotamento
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+Arquivos de configuração de IDEs populares
+.vscode/
+.idea/
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sw?
+
+Arquivos de teste e cobertura de código
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+Arquivos de sistema operacional
+Mac
+.DS_Store
+
+Windows
+Thumbs.db
+
+Logs
+*.log
+logs/
+
+Arquivos de banco de dados
+*.sqlite3
+*.db
