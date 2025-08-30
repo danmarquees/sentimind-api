@@ -1,4 +1,6 @@
-Sentimind API 🧠
+
+
+# Sentimind API 🧠
 Um microsserviço de alta performance para análise de sentimento e sumarização de texto, construído com FastAPI e modelos de linguagem da Hugging Face. O projeto é focado na implementação de um ciclo de vida completo de MLOps, demonstrando práticas modernas de desenvolvimento, automação e deploy em nuvem.
 
 ✨ Funcionalidades
